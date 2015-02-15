@@ -38,6 +38,12 @@ remove "python:3.2.6"
 remove "python:3.3.6"
 remove "python:3.4.2"
 
+# ruby
+remove "ruby:1.9.3-p551"
+remove "ruby:2.0.0-p598"
+remove "ruby:2.1.5"
+remove "ruby:2.2.0"
+
 # elasticsearch
 remove "elasticsearch:0.90.13"
 remove "elasticsearch:1.0.3"

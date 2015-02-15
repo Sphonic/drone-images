@@ -38,6 +38,12 @@ build "python:3.2.6" "builder/python/python_3.2.6/"
 build "python:3.3.6" "builder/python/python_3.3.6/"
 build "python:3.4.2" "builder/python/python_3.4.2/"
 
+# ruby
+build "ruby:1.9.3-p551" "builder/ruby/ruby_1.9.3-p551/"
+build "ruby:2.0.0-p598" "builder/ruby/ruby_2.0.0-p598/"
+build "ruby:2.1.5" "builder/ruby/ruby_2.1.5/"
+build "ruby:2.2.0" "builder/ruby/ruby_2.2.0/"
+
 # elasticsearch
 build "elasticsearch:0.90.13" "database/elasticsearch/elasticsearch_0.90.13/"
 build "elasticsearch:1.0.3" "database/elasticsearch/elasticsearch_1.0.3/"

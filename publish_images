@@ -38,6 +38,12 @@ publish "python:3.2.6"
 publish "python:3.3.6"
 publish "python:3.4.2"
 
+# ruby
+publish "ruby:1.9.3-p551"
+publish "ruby:2.0.0-p598"
+publish "ruby:2.1.5"
+publish "ruby:2.2.0"
+
 # elasticsearch
 publish "elasticsearch:0.90.13"
 publish "elasticsearch:1.0.3"

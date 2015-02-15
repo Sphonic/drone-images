@@ -168,6 +168,12 @@ docker pull sphonic/python:2.7.9
 docker pull sphonic/python:3.2.6
 docker pull sphonic/python:3.3.6
 docker pull sphonic/python:3.4.2
+
+# ruby
+docker pull sphonic/ruby:1.9.3-p551
+docker pull sphonic/ruby:2.0.0-p598
+docker pull sphonic/ruby:2.1.5
+docker pull sphonic/ruby:2.2.0
 ```
 
 ### Databases
