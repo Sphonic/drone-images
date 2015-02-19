@@ -18,12 +18,12 @@ build() {
   logfile="${LOG_DIR}/${name//:/_}.log"
 
   if [[ ! -d $path ]]; then
-    echo -e "\e[31m ✗ MISSING\e[0m ${DOCKER_USER}/${name}";
+    echo -e "\e[31m ✗ MISSING   \e[0m ${DOCKER_USER}/${name}";
     return
   fi
 
   if [[ ! -r "${path}/${dockerfile}" ]]; then
-    echo -e "\e[31m ✗ MISSING\e[0m ${DOCKER_USER}/${name}/${dockerfile}";
+    echo -e "\e[31m ✗ MISSING   \e[0m ${DOCKER_USER}/${name}/${dockerfile}";
     return
   fi
 
@@ -34,7 +34,7 @@ build() {
   if [[ $ret -gt 0 ]]; then
     # display the last 50 lines for the failed docker build
     tail -n50 $logfile
-    echo -e "\e[31m ✗ FAILURE\e[0m ${DOCKER_USER}/${name}";
+    echo -e "\e[31m ✗ FAILURE   \e[0m ${DOCKER_USER}/${name}";
   else
     # docker doesn't seem to exit with an error code
     # if the Dockerfile fails to create an image.
@@ -44,9 +44,9 @@ build() {
     docker images $repository | grep ${tag} 2>&1 > /dev/null
     if [[ $? -gt 0 ]]; then
       tail -n50 $logfile
-      echo -e "\e[31m ✗ FAILURE\e[0m ${DOCKER_USER}/${name}";
+      echo -e "\e[31m ✗ FAILURE   \e[0m ${DOCKER_USER}/${name}";
     else
-      echo -e "\e[32m ✓ CREATED\e[0m ${DOCKER_USER}/${name}";
+      echo -e "\e[32m ✓ CREATED   \e[0m ${DOCKER_USER}/${name}";
     fi
   fi
 }
@@ -62,12 +62,12 @@ remove() {
     # check if a image with the supplied name is registered
     docker images | grep ${DOCKER_USER}/${name} 2>&1
     if [[ $? -gt 0 ]]; then
-      echo -e "\e[32m ✓ REMOVED\e[0m ${DOCKER_USER}/${name}";
+      echo -e "\e[32m ✓ REMOVED   \e[0m ${DOCKER_USER}/${name}";
     else
-      echo -e "\e[31m ✗ FAILURE\e[0m ${DOCKER_USER}/${name}";
+      echo -e "\e[31m ✗ FAILURE   \e[0m ${DOCKER_USER}/${name}";
     fi
   else
-    echo -e "\e[32m ✓ REMOVED\e[0m ${DOCKER_USER}/${name}";
+    echo -e "\e[32m ✓ REMOVED   \e[0m ${DOCKER_USER}/${name}";
   fi
 }
 
@@ -80,9 +80,9 @@ publish() {
 
   docker push ${DOCKER_USER}/${name} 2>&1 > $logfile
   if [[ $? -gt 0 ]]; then
-    echo -e "\e[31m ✗ FAILURE\e[0m ${DOCKER_USER}/${name}";
+    echo -e "\e[31m ✗ FAILURE   \e[0m ${DOCKER_USER}/${name}";
   else
-    echo -e "\e[32m ✓ PUBLISH\e[0m ${DOCKER_USER}/${name}";
+    echo -e "\e[32m ✓ PUBLISH   \e[0m ${DOCKER_USER}/${name}";
   fi
 }
 
@@ -90,5 +90,12 @@ skip() {
   name=$1;
   path=$2;
 
-  echo -e "\e[33m – SKIPPED\e[0m ${DOCKER_USER}/${name}";
+  echo -e "\e[33m – SKIPPED   \e[0m ${DOCKER_USER}/${name}";
+}
+
+deprecated() {
+  name=$1;
+  path=$2;
+
+  echo -e "\e[34m – DEPRECATED\e[0m ${DOCKER_USER}/${name}";
 }

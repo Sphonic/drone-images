@@ -6,8 +6,14 @@
 source $(dirname $(readlink -f $0))/_functions.sh
 
 # base
-build "base:precise" "builder/base/" "Dockerfile-precise"
-build "base:trusty" "builder/base/" "Dockerfile-trusty"
+deprecated "base:precise" "builder/base/" "Dockerfile-precise"
+deprecated "base:trusty" "builder/base/" "Dockerfile-trusty"
+
+# base-core
+build "base-core:20150219" "builder/base-core/"
+
+# base-java
+build "base-java:20150219" "builder/base-java/"
 
 # gcc
 build "gcc:4.6" "builder/gcc/gcc_4.6/"
