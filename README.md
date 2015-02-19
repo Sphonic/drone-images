@@ -17,24 +17,10 @@ each repository name.
 If images should be build for a different organisation than 'sphonic' the env
 variable needs to be change accordingly.
 
-The images are all based on a ubuntu seed image that is created from an ubuntu
-cloud image. A working linux system with docker, lxc-utils and recent
-lxc-templates is required to build the seed image.
+The images are all based on a base-core image which is extending the official
+ubuntu:trusty image.
 
-Ubuntu 14.04 is the system that was used for testing.
-
-The script `ubuntu-seed/build.sh` can be used to generate seed images for
-different ubuntu versions by exporting the `UBUNTU_RELEASE` env variable.
-
-```terminal
-UBUNTU_RELEASE=trusty  ubuntu-seed/build.sh
-UBUNTU_RELEASE=precise ubuntu-seed/build.sh
-```
-
-This will result in `sphonic/ubuntu:trusty` and `sphonic/ubuntu:precise` docker
-images being created and imported.
-
-All other images can be build in a one-shot manner using the supplied helpers:
+The images can be build, removed and published using the following scripts:
 
 ### build_images
 
@@ -55,8 +41,8 @@ the image can be changed to `skip`.*
 
 ### publish_images
 
-This will loop through the defined templates and push the generated images to the
-configured remote docker repository.
+This will loop through the defined templates and push the generated images to
+the configured remote docker repository.
 To successfully push images you have to be authenticated already.
 For authentication with the hub run `docker login` and enter your credentials.
 
@@ -75,7 +61,7 @@ supportive tooling out of the box.
 
 ## Base
 
-A JeOS ubuntu image with some automation around compiler toolkits.
+A JeOS ubuntu image with some automation around compiler and language toolkits.
 
 Included software:
 
@@ -127,15 +113,26 @@ Included software:
 - chromium
 - firefox
 - phantomjs
-- java (openjdk-7)
+- golang (via goenv; no version installed by default)
+- nodejs (via nodenv; no version installed by default)
+- python (via pyenv; no version installed by default)
+- ruby (via rbenv; no version installed by default)
+
+## Base Java
+
+This image extends the Base image by adding java jdk versions and java build
+tools.
+
+Included software:
+
 - ant
 - ivy
 - maven
 - gradle
-- golang (via goenv)
-- nodejs (via nodenv)
-- python (via pyenv)
-- ruby (via rbenv)
+- openjdk-7
+- oracle-jdk-6
+- oracle-jdk-7
+- oracle-jdk-8
 
 ### Builders
 

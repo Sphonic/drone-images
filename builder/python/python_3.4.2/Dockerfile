@@ -1,8 +1,6 @@
-FROM sphonic/base:trusty
-MAINTAINER Daniel Malon <operations@sphonic.com>
+FROM sphonic/base-core:20150219
 
-WORKDIR /root
-USER root
+MAINTAINER Daniel Malon <operations@sphonic.com>
 
 ENV PYENV_VERSION 3.4.2
 
