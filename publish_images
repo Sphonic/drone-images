@@ -37,6 +37,7 @@ publish "nodejs:0.11.14"
 publish "golang:1.2.2"
 publish "golang:1.3.3"
 publish "golang:1.4.1"
+publish "golang:1.4.2"
 
 # python
 publish "python:2.7.9"
