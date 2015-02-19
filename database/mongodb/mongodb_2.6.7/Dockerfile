@@ -1,4 +1,5 @@
-FROM sphonic/ubuntu:trusty
+FROM ubuntu:trusty
+
 MAINTAINER Daniel Malon <operations@sphonic.com>
 
 WORKDIR /root
