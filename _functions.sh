@@ -27,6 +27,17 @@ build() {
     return
   fi
 
+  # split out repository and tag out of the image name
+  repository="${DOCKER_USER}/${name%:*}"
+  tag=${name##*:}
+
+  # skip the build if the image already exists with the requested tag
+  docker images $repository | grep ${tag} 2>&1 > /dev/null
+  if [[ $? -eq 0 ]]; then
+    echo -e "\e[32m ✓ EXISTS    \e[0m ${DOCKER_USER}/${name}";
+    return
+  fi
+
   # build docker image for the given path
   docker build --rm -f ${path}/${dockerfile} -t ${DOCKER_USER}/${name} $path 2>&1 > $logfile
   ret=$?
@@ -39,8 +50,6 @@ build() {
     # docker doesn't seem to exit with an error code
     # if the Dockerfile fails to create an image.
     # so let's proactively check to see if it exists.
-    repository="${DOCKER_USER}/${name%:*}"
-    tag=${name##*:}
     docker images $repository | grep ${tag} 2>&1 > /dev/null
     if [[ $? -gt 0 ]]; then
       tail -n50 $logfile
