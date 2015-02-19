@@ -1,8 +1,6 @@
-FROM sphonic/base:trusty
-MAINTAINER Daniel Malon <operations@sphonic.com>
+FROM sphonic/base-java:20150219
 
-WORKDIR /root
-USER root
+MAINTAINER Daniel Malon <operations@sphonic.com>
 
 ADD http://www.scala-lang.org/files/archive/scala-2.9.3.deb /tmp/
 ADD http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.1/sbt.deb /tmp/

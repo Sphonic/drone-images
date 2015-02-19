@@ -1,8 +1,6 @@
-FROM sphonic/base:trusty
-MAINTAINER Daniel Malon <operations@sphonic.com>
+FROM sphonic/base-core:20150219
 
-WORKDIR /root
-USER root
+MAINTAINER Daniel Malon <operations@sphonic.com>
 
 ENV GOENV_VERSION 1.3.3
 

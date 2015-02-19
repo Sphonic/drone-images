@@ -1,8 +1,6 @@
-FROM sphonic/base:trusty
-MAINTAINER Daniel Malon <operations@sphonic.com>
+FROM sphonic/base-java:20150219
 
-WORKDIR /root
-USER root
+MAINTAINER Daniel Malon <operations@sphonic.com>
 
 ADD https://raw.githubusercontent.com/technomancy/leiningen/2.5.1/bin/lein /usr/local/bin/lein
 
