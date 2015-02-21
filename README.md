@@ -184,3 +184,9 @@ docker pull sphonic/elasticsearch:1.2.3
 docker pull sphonic/elasticsearch:1.3.8
 docker pull sphonic/elasticsearch:1.4.3
 ```
+
+```
+# cassandra
+docker pull sphonic/cassandra:2.0.12
+docker pull sphonic/cassandra:2.1.3
+```
