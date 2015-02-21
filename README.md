@@ -141,31 +141,43 @@ Included software:
 docker pull sphonic/gcc:4.6
 docker pull sphonic/gcc:4.7
 docker pull sphonic/gcc:4.8
+```
 
+```
 # scala
 docker pull sphonic/scala:2.9.3
 docker pull sphonic/scala:2.10.4
 docker pull sphonic/scala:2.11.5
+```
 
+```
 # clojure
 docker pull sphonic/leiningen:2.5.1
+```
 
+```
 # nodejs
 docker pull sphonic/nodejs:0.8.26
 docker pull sphonic/nodejs:0.10.36
 docker pull sphonic/nodejs:0.11.14
+```
 
+```
 # golang
 docker pull sphonic/golang:1.2.2
 docker pull sphonic/golang:1.3.3
 docker pull sphonic/golang:1.4.1
+```
 
+```
 # python
 docker pull sphonic/python:2.7.9
 docker pull sphonic/python:3.2.6
 docker pull sphonic/python:3.3.6
 docker pull sphonic/python:3.4.2
+```
 
+```
 # ruby
 docker pull sphonic/ruby:1.9.3-p551
 docker pull sphonic/ruby:2.0.0-p598
