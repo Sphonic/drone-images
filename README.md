@@ -190,3 +190,10 @@ docker pull sphonic/elasticsearch:1.4.3
 docker pull sphonic/cassandra:2.0.12
 docker pull sphonic/cassandra:2.1.3
 ```
+
+```
+# mongodb
+docker pull sphonic/mongodb:2.2.7
+docker pull sphonic/mongodb:2.4.12
+docker pull sphonic/mongodb:2.6.7
+```
