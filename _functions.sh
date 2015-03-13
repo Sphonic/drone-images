@@ -32,7 +32,7 @@ build() {
   tag=${name##*:}
 
   # skip the build if the image already exists with the requested tag
-  docker images $repository | grep ${tag} 2>&1 > /dev/null
+  docker images $repository | grep -F ${tag} 2>&1 > /dev/null
   if [[ $? -eq 0 ]]; then
     echo -e "\e[32m ✓ EXISTS    \e[0m ${DOCKER_USER}/${name}";
     return
@@ -50,7 +50,7 @@ build() {
     # docker doesn't seem to exit with an error code
     # if the Dockerfile fails to create an image.
     # so let's proactively check to see if it exists.
-    docker images $repository | grep ${tag} 2>&1 > /dev/null
+    docker images $repository | grep -F ${tag} 2>&1 > /dev/null
     if [[ $? -gt 0 ]]; then
       tail -n50 $logfile
       echo -e "\e[31m ✗ FAILURE   \e[0m ${DOCKER_USER}/${name}";
@@ -69,7 +69,7 @@ remove() {
   result=$(docker rmi ${DOCKER_USER}/${name} 2>&1);
   if [[ $? -gt 0 ]]; then
     # check if a image with the supplied name is registered
-    docker images | grep ${DOCKER_USER}/${name} 2>&1
+    docker images | grep -F ${DOCKER_USER}/${name} 2>&1
     if [[ $? -gt 0 ]]; then
       echo -e "\e[32m ✓ REMOVED   \e[0m ${DOCKER_USER}/${name}";
     else
