@@ -167,6 +167,7 @@ docker pull sphonic/nodejs:0.11.14
 docker pull sphonic/golang:1.2.2
 docker pull sphonic/golang:1.3.3
 docker pull sphonic/golang:1.4.1
+docker pull sphonic/golang:1.4.2
 ```
 
 ```
@@ -208,4 +209,6 @@ docker pull sphonic/cassandra:2.1.3
 docker pull sphonic/mongodb:2.2.7
 docker pull sphonic/mongodb:2.4.12
 docker pull sphonic/mongodb:2.6.7
+docker pull sphonic/mongodb:2.6.8
+docker pull sphonic/mongodb:3.0.0
 ```
