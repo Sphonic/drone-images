@@ -32,6 +32,7 @@ remove "leiningen:2.5.1"
 remove "nodejs:0.8.26"
 remove "nodejs:0.10.36"
 remove "nodejs:0.11.14"
+remove "nodejs:0.12.0"
 
 # golang
 remove "golang:1.2.2"

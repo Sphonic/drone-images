@@ -32,6 +32,7 @@ publish "leiningen:2.5.1"
 publish "nodejs:0.8.26"
 publish "nodejs:0.10.36"
 publish "nodejs:0.11.14"
+publish "nodejs:0.12.0"
 
 # golang
 publish "golang:1.2.2"
