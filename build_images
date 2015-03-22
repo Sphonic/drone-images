@@ -32,6 +32,7 @@ build "leiningen:2.5.1" "builder/clojure/leiningen_2.5.1/"
 build "nodejs:0.8.26" "builder/nodejs/nodejs_0.8.26/"
 build "nodejs:0.10.36" "builder/nodejs/nodejs_0.10.36/"
 build "nodejs:0.11.14" "builder/nodejs/nodejs_0.11.14/"
+build "nodejs:0.12.0" "builder/nodejs/nodejs_0.12.0/"
 
 # golang
 build "golang:1.2.2" "builder/golang/golang_1.2.2/"
