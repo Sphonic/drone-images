@@ -51,6 +51,9 @@ publish "ruby:2.0.0-p598"
 publish "ruby:2.1.5"
 publish "ruby:2.2.0"
 
+# groovy + grails
+publish "grails:2.3.5"
+
 # elasticsearch
 publish "elasticsearch:0.90.13"
 publish "elasticsearch:1.0.3"

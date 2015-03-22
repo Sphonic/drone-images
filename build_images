@@ -51,6 +51,9 @@ build "ruby:2.0.0-p598" "builder/ruby/ruby_2.0.0-p598/"
 build "ruby:2.1.5" "builder/ruby/ruby_2.1.5/"
 build "ruby:2.2.0" "builder/ruby/ruby_2.2.0/"
 
+# groovy + grails
+build "grails:2.3.5" "builder/grails/grails_2.3.5/"
+
 # elasticsearch
 build "elasticsearch:0.90.13" "database/elasticsearch/elasticsearch_0.90.13/"
 build "elasticsearch:1.0.3" "database/elasticsearch/elasticsearch_1.0.3/"
