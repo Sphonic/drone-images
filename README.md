@@ -147,6 +147,7 @@ docker pull sphonic/gcc:4.8
 # scala
 docker pull sphonic/scala:2.9.3
 docker pull sphonic/scala:2.10.4
+docker pull sphonic/scala:2.10.5
 docker pull sphonic/scala:2.11.5
 ```
 

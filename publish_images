@@ -23,6 +23,7 @@ publish "gcc:4.8"
 # scala
 publish "scala:2.9.3"
 publish "scala:2.10.4"
+publish "scala:2.10.5"
 publish "scala:2.11.5"
 
 # clojure
