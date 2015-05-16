@@ -3,7 +3,7 @@ FROM sphonic/base-java:20150219
 MAINTAINER Daniel Malon <operations@sphonic.com>
 
 ADD http://www.scala-lang.org/files/archive/scala-2.10.5.deb /tmp/
-ADD http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.8/sbt.deb /tmp/
+ADD http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.1/sbt.deb /tmp/
 
 RUN \
   apt-get update -qq                                                          && \
