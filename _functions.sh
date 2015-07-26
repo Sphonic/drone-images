@@ -3,6 +3,8 @@ DOCKER_USER=${DOCKER_USER:="sphonic"}
 
 LOG_DIR=${LOG_DIR:="$(dirname $(readlink -f $0))/logs"}
 
+ONLY=${ONLY:=""}
+
 # function to create Docker images and print out
 # the result. If image creation fails, we'll print
 # out the stderr.
@@ -10,6 +12,11 @@ build() {
   name=$1;
   path=$2;
   dockerfile=$3;
+
+  if [[ ! -z $ONLY ]] && [[ $name != $ONLY ]]; then
+    skip "${name}"
+    return
+  fi
 
   # resolve to default value if not set
   dockerfile=${dockerfile:="Dockerfile"};
@@ -66,6 +73,11 @@ build() {
 remove() {
   name=$1;
 
+  if [[ ! -z $ONLY ]] && [[ $name != $ONLY ]]; then
+    skip "${name}"
+    return
+  fi
+
   result=$(docker rmi ${DOCKER_USER}/${name} 2>&1);
   if [[ $? -gt 0 ]]; then
     # check if a image with the supplied name is registered
@@ -83,6 +95,11 @@ remove() {
 # function to publish Docker images to the Hub
 publish() {
   name=$1;
+
+  if [[ ! -z $ONLY ]] && [[ $name != $ONLY ]]; then
+    skip "${name}"
+    return
+  fi
 
   # log docker output to this file
   logfile="${LOG_DIR}/${name//:/_}_publish.log"
@@ -108,3 +125,4 @@ deprecated() {
 
   echo -e "\e[34m – DEPRECATED\e[0m ${DOCKER_USER}/${name}";
 }
+
