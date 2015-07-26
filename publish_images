@@ -71,6 +71,8 @@ publish "elasticsearch:1.4.3"
 # cassandra
 publish "cassandra:2.0.12"
 publish "cassandra:2.1.3"
+publish "cassandra:2.1.8"
+publish "cassandra:2.2.0"
 
 # mongodb
 publish "mongodb:2.2.7"
@@ -78,3 +80,4 @@ publish "mongodb:2.4.12"
 publish "mongodb:2.6.7"
 publish "mongodb:2.6.8"
 publish "mongodb:3.0.0"
+

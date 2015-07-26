@@ -71,6 +71,8 @@ remove "elasticsearch:1.4.3"
 # cassandra
 remove "cassandra:2.0.12"
 remove "cassandra:2.1.3"
+remove "cassandra:2.1.8"
+remove "cassandra:2.2.0"
 
 # mongodb
 remove "mongodb:2.2.7"
@@ -78,3 +80,4 @@ remove "mongodb:2.4.12"
 remove "mongodb:2.6.7"
 remove "mongodb:2.6.8"
 remove "mongodb:3.0.0"
+
