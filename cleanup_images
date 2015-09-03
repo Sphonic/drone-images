@@ -59,6 +59,7 @@ remove "ruby:2.2.0"
 
 # groovy + grails
 remove "grails:2.3.5"
+remove "grails:2.4.5"
 
 # elasticsearch
 remove "elasticsearch:0.90.13"
