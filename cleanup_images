@@ -3,7 +3,7 @@
 # set DOCKER_USER to an organization for the images
 
 # import global functions
-source $(dirname $(readlink -f $0))/_functions.sh
+source $(cd $(dirname $(dirname $0)) && pwd)/_functions.sh
 
 # base
 remove "base:precise"
