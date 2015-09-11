@@ -73,7 +73,9 @@ build "elasticsearch:1.4.3" "database/elasticsearch/elasticsearch_1.4.3/"
 build "cassandra:2.0.12" "database/cassandra/cassandra_2.0.12/"
 build "cassandra:2.1.3" "database/cassandra/cassandra_2.1.3/"
 build "cassandra:2.1.8" "database/cassandra/cassandra_2.1.8/"
+build "cassandra:2.1.9" "database/cassandra/cassandra_2.1.9/"
 build "cassandra:2.2.0" "database/cassandra/cassandra_2.2.0/"
+build "cassandra:2.2.1" "database/cassandra/cassandra_2.2.1/"
 
 # mongodb
 build "mongodb:2.2.7" "database/mongodb/mongodb_2.2.7/"
