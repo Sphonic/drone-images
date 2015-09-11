@@ -44,6 +44,7 @@ build "golang:1.2.2" "builder/golang/golang_1.2.2/"
 build "golang:1.3.3" "builder/golang/golang_1.3.3/"
 build "golang:1.4.1" "builder/golang/golang_1.4.1/"
 build "golang:1.4.2" "builder/golang/golang_1.4.2/"
+build "golang:1.5.1" "builder/golang/golang_1.5.1/"
 
 # python
 build "python:2.7.9" "builder/python/python_2.7.9/"
