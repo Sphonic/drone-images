@@ -82,5 +82,7 @@ remove "mongodb:2.2.7"
 remove "mongodb:2.4.12"
 remove "mongodb:2.6.7"
 remove "mongodb:2.6.8"
+remove "mongodb:2.6.11"
 remove "mongodb:3.0.0"
+remove "mongodb:3.0.6"
 

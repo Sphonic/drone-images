@@ -82,5 +82,7 @@ publish "mongodb:2.2.7"
 publish "mongodb:2.4.12"
 publish "mongodb:2.6.7"
 publish "mongodb:2.6.8"
+publish "mongodb:2.6.11"
 publish "mongodb:3.0.0"
+publish "mongodb:3.0.6"
 

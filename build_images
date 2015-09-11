@@ -82,5 +82,7 @@ build "mongodb:2.2.7" "database/mongodb/mongodb_2.2.7/"
 build "mongodb:2.4.12" "database/mongodb/mongodb_2.4.12/"
 build "mongodb:2.6.7" "database/mongodb/mongodb_2.6.7/"
 build "mongodb:2.6.8" "database/mongodb/mongodb_2.6.8/"
+build "mongodb:2.6.11" "database/mongodb/mongodb_2.6.11/"
 build "mongodb:3.0.0" "database/mongodb/mongodb_3.0.0/"
+build "mongodb:3.0.6" "database/mongodb/mongodb_3.0.6/"
 
