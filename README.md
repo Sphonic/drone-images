@@ -137,6 +137,11 @@ Included software:
 ### Builders
 
 ```
+# ansible
+docker pull sphonic/ansible:1.9.2
+```
+
+```
 # gcc
 docker pull sphonic/gcc:4.6
 docker pull sphonic/gcc:4.7
@@ -149,6 +154,7 @@ docker pull sphonic/scala:2.9.3
 docker pull sphonic/scala:2.10.4
 docker pull sphonic/scala:2.10.5
 docker pull sphonic/scala:2.11.5
+docker pull sphonic/scala:2.11.6
 ```
 
 ```
@@ -161,6 +167,7 @@ docker pull sphonic/leiningen:2.5.1
 docker pull sphonic/nodejs:0.8.26
 docker pull sphonic/nodejs:0.10.36
 docker pull sphonic/nodejs:0.11.14
+docker pull sphonic/nodejs:0.12.0
 ```
 
 ```
@@ -169,6 +176,7 @@ docker pull sphonic/golang:1.2.2
 docker pull sphonic/golang:1.3.3
 docker pull sphonic/golang:1.4.1
 docker pull sphonic/golang:1.4.2
+docker pull sphonic/golang:1.5.1
 ```
 
 ```
@@ -187,6 +195,12 @@ docker pull sphonic/ruby:2.1.5
 docker pull sphonic/ruby:2.2.0
 ```
 
+```
+# groovy + grails
+docker pull sphonic/grails:2.3.5
+docker pull sphonic/grails:2.4.5
+```
+
 ### Databases
 
 ```
@@ -197,6 +211,8 @@ docker pull sphonic/elasticsearch:1.1.2
 docker pull sphonic/elasticsearch:1.2.3
 docker pull sphonic/elasticsearch:1.3.8
 docker pull sphonic/elasticsearch:1.4.3
+docker pull sphonic/elasticsearch:1.6.2
+docker pull sphonic/elasticsearch:1.7.1
 ```
 
 ```
@@ -204,7 +220,9 @@ docker pull sphonic/elasticsearch:1.4.3
 docker pull sphonic/cassandra:2.0.12
 docker pull sphonic/cassandra:2.1.3
 docker pull sphonic/cassandra:2.1.8
+docker pull sphonic/cassandra:2.1.9
 docker pull sphonic/cassandra:2.2.0
+docker pull sphonic/cassandra:2.2.1
 ```
 
 ```
@@ -213,5 +231,7 @@ docker pull sphonic/mongodb:2.2.7
 docker pull sphonic/mongodb:2.4.12
 docker pull sphonic/mongodb:2.6.7
 docker pull sphonic/mongodb:2.6.8
+docker pull sphonic/mongodb:2.6.11
 docker pull sphonic/mongodb:3.0.0
+docker pull sphonic/mongodb:3.0.6
 ```
