@@ -68,6 +68,8 @@ build "elasticsearch:1.1.2" "database/elasticsearch/elasticsearch_1.1.2/"
 build "elasticsearch:1.2.3" "database/elasticsearch/elasticsearch_1.2.3/"
 build "elasticsearch:1.3.8" "database/elasticsearch/elasticsearch_1.3.8/"
 build "elasticsearch:1.4.3" "database/elasticsearch/elasticsearch_1.4.3/"
+build "elasticsearch:1.6.2" "database/elasticsearch/elasticsearch_1.6.2/"
+build "elasticsearch:1.7.1" "database/elasticsearch/elasticsearch_1.7.1/"
 
 # cassandra
 build "cassandra:2.0.12" "database/cassandra/cassandra_2.0.12/"
