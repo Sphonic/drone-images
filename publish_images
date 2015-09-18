@@ -13,7 +13,7 @@ deprecated "base:trusty"
 publish "base-core:20150918"
 
 # base-java
-publish "base-java:20150219"
+publish "base-java:20150918"
 
 # ansible
 publish "ansible:1.9.2"

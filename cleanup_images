@@ -13,7 +13,7 @@ remove "base:trusty"
 remove "base-core:20150918"
 
 # base-java
-remove "base-java:20150219"
+remove "base-java:20150918"
 
 # ansible
 remove "ansible:1.9.2"

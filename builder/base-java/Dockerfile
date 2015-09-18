@@ -1,4 +1,4 @@
-FROM sphonic/base-core:20150219
+FROM sphonic/base-core:20150918
 
 MAINTAINER Daniel Malon <operations@sphonic.com>
 

@@ -13,7 +13,7 @@ deprecated "base:trusty" "builder/base/" "Dockerfile-trusty"
 build "base-core:20150918" "builder/base-core/"
 
 # base-java
-build "base-java:20150219" "builder/base-java/"
+build "base-java:20150918" "builder/base-java/"
 
 # ansible
 build "ansible:1.9.2" "builder/ansible/ansible_1.9.2/"
