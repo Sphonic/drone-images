@@ -28,6 +28,7 @@ build "scala:2.10.4" "builder/scala/scala_2.10.4/"
 build "scala:2.10.5" "builder/scala/scala_2.10.5/"
 build "scala:2.11.5" "builder/scala/scala_2.11.5/"
 build "scala:2.11.6" "builder/scala/scala_2.11.6/"
+build "scala:2.11.7" "builder/scala/scala_2.11.7/"
 
 # clojure
 build "leiningen:2.5.1" "builder/clojure/leiningen_2.5.1/"

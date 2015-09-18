@@ -28,6 +28,7 @@ remove "scala:2.10.4"
 remove "scala:2.10.5"
 remove "scala:2.11.5"
 remove "scala:2.11.6"
+remove "scala:2.11.7"
 
 # clojure
 remove "leiningen:2.5.1"
