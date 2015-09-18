@@ -6,3 +6,4 @@ sudo git clone git://github.com/OiNutter/node-build.git ~/.nodenv/plugins/node-b
 
 # alter path and install default nodejs via /etc/drone.d/nodenv.sh
 sudo bash /etc/drone.d/nodenv.sh
+

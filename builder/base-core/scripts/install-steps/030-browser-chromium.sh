@@ -4,3 +4,4 @@
 sudo apt-get install -yqq \
   libqtwebkit-dev \
   chromium-browser
+

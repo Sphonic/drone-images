@@ -6,3 +6,4 @@ sudo git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby
 
 # alter path and install default ruby via /etc/drone.d/rbenv.sh
 sudo bash /etc/drone.d/rbenv.sh
+

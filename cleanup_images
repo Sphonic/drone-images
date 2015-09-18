@@ -10,7 +10,7 @@ remove "base:precise"
 remove "base:trusty"
 
 # base-core
-remove "base-core:20150219"
+remove "base-core:20150918"
 
 # base-java
 remove "base-java:20150219"

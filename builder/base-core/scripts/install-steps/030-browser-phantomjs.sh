@@ -14,3 +14,4 @@ sudo install -t /usr/local/bin phantomjs-${PHANTOMJS_VERSION}-linux-x86_64/bin/p
 rm -rf phantomjs-${PHANTOMJS_VERSION}-linux-x86_64*
 
 popd
+

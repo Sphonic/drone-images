@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-CHROMEDRIVER_VERSION=${CHROMEDRIVER_VERSION:="2.14"}
+CHROMEDRIVER_VERSION=${CHROMEDRIVER_VERSION:="2.19"}
 
 pushd /tmp
 
@@ -15,3 +15,4 @@ sudo install -t /usr/local/bin chromedriver
 rm -rf chromedriver*
 
 popd
+

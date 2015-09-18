@@ -7,10 +7,10 @@ set -e
 echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 # update package repository cache
-sudo apt-get -yqq update
+apt-get -yqq update
 
 # add essential packages
-sudo apt-get install -yqq \
+apt-get install -yqq \
   software-properties-common \
   git git-core \
   subversion \
@@ -20,7 +20,8 @@ sudo apt-get install -yqq \
   xvfb \
   socat \
   unzip xzdec \
-  curl wget
+  curl wget \
+  sudo
 
 # loop over available install steps and execute them one-by-one
 # naming defines order of execution
@@ -31,7 +32,7 @@ for step in $(dirname $(readlink -f $0))/install-steps/*.sh; do
 done
 
 # cleanup
-sudo apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # exit successfully
 exit 0

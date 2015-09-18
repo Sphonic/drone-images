@@ -1,11 +1,9 @@
-FROM ubuntu:trusty
+FROM ubuntu:vivid
 
 MAINTAINER Daniel Malon <operations@sphonic.com>
 
 ADD rootfs/etc /etc/
 ADD rootfs/root /root/
-
-RUN whoami && chown root:root /etc/sudoers && chmod 0440 /etc/sudoers
 
 WORKDIR /root
 USER root
@@ -21,3 +19,4 @@ ENV LC_TYPE C
 
 ADD scripts /tmp/scripts
 RUN cd /tmp && bash scripts/install.sh && sudo rm -rf /tmp/scripts
+
