@@ -24,7 +24,6 @@ remove "gcc:4.7"
 remove "gcc:4.8"
 
 # scala
-remove "scala:2.9.3"
 remove "scala:2.10.4"
 remove "scala:2.10.5"
 remove "scala:2.11.5"

@@ -24,7 +24,6 @@ build "gcc:4.7" "builder/gcc/gcc_4.7/"
 build "gcc:4.8" "builder/gcc/gcc_4.8/"
 
 # scala
-build "scala:2.9.3" "builder/scala/scala_2.9.3/"
 build "scala:2.10.4" "builder/scala/scala_2.10.4/"
 build "scala:2.10.5" "builder/scala/scala_2.10.5/"
 build "scala:2.11.5" "builder/scala/scala_2.11.5/"
