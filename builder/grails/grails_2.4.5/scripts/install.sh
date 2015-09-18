@@ -3,18 +3,18 @@
 set -x
 set -e
 
-# install gvmtool
-curl -s get.gvmtool.net | bash
+# install sdkman
+curl -s get.gvm.io | bash
 
-# configure gvmtool to run non-interactive
-mkdir -p /root/.gvm/etc
-cat << EOF > /root/.gvm/etc/config
-gvm_auto_answer=true
-gvm_auto_selfupdate=false
+# configure sdkman to run non-interactive
+mkdir -p /root/.sdkman/etc
+cat << EOF > /root/.sdkman/etc/config
+sdkman_auto_answer=true
+sdkman_auto_selfupdate=false
 EOF
 
 # activate default groovy and grails versions
-bash /etc/drone.d/gvm.sh
+bash /etc/drone.d/sdkman.sh
 
 # exit successfully
 exit 0
