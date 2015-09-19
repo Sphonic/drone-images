@@ -7,7 +7,7 @@ Scripts and Dockerfiles to generate build machines for Drone CI.
 These scripts are based on the https://github.com/drone/images repository.
 
 The base image is mostly compatible with the drone.io one.
-The biggest difference is the upgrade to Ubuntu trusty (14.04) and the decission
+The biggest difference is the upgrade to Ubuntu vivid (15.04) and the decission
 to run all builds as `root`.
 
 ---
@@ -111,7 +111,6 @@ Included software:
 - libzmq
 - chromedriver
 - chromium
-- firefox
 - phantomjs
 - golang (via goenv; no version installed by default)
 - nodejs (via nodenv; no version installed by default)
@@ -130,7 +129,7 @@ Included software:
 - maven
 - gradle
 - openjdk-7
-- oracle-jdk-6
+- openjdk-8
 - oracle-jdk-7
 - oracle-jdk-8
 
@@ -155,6 +154,7 @@ docker pull sphonic/scala:2.10.4
 docker pull sphonic/scala:2.10.5
 docker pull sphonic/scala:2.11.5
 docker pull sphonic/scala:2.11.6
+docker pull sphonic/scala:2.11.7
 ```
 
 ```
