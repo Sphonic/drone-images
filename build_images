@@ -61,6 +61,7 @@ build "ruby:2.2.0" "builder/ruby/ruby_2.2.0/"
 # groovy + grails
 build "grails:2.3.5" "builder/grails/grails_2.3.5/"
 build "grails:2.4.5" "builder/grails/grails_2.4.5/"
+build "grails:3.0.9" "builder/grails/grails_3.0.9/"
 
 # elasticsearch
 build "elasticsearch:0.90.13" "database/elasticsearch/elasticsearch_0.90.13/"

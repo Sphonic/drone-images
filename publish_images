@@ -61,6 +61,7 @@ publish "ruby:2.2.0"
 # groovy + grails
 publish "grails:2.3.5"
 publish "grails:2.4.5"
+publish "grails:3.0.9"
 
 # elasticsearch
 publish "elasticsearch:0.90.13"

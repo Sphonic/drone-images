@@ -199,6 +199,7 @@ docker pull sphonic/ruby:2.2.0
 # groovy + grails
 docker pull sphonic/grails:2.3.5
 docker pull sphonic/grails:2.4.5
+docker pull sphonic/grails:3.0.9
 ```
 
 ### Databases
