@@ -15,6 +15,9 @@ build "base-core:20150918" "builder/base-core/"
 # base-java
 build "base-java:20150918" "builder/base-java/"
 
+# dind
+build "dind:1.9.1" "builder/dind/dind_1.9.1/"
+
 # ansible
 build "ansible:1.9.2" "builder/ansible/ansible_1.9.2/"
 

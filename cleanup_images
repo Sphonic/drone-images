@@ -15,6 +15,9 @@ remove "base-core:20150918"
 # base-java
 remove "base-java:20150918"
 
+# dind
+remove "dind:1.9.1"
+
 # ansible
 remove "ansible:1.9.2"
 

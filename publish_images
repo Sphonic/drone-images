@@ -15,6 +15,9 @@ publish "base-core:20150918"
 # base-java
 publish "base-java:20150918"
 
+# dind
+publish "dind:1.9.1"
+
 # ansible
 publish "ansible:1.9.2"
 
