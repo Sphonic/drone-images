@@ -10,10 +10,10 @@ remove "base:precise"
 remove "base:trusty"
 
 # base-core
-remove "base-core:20150918"
+remove "base-core:20160207"
 
 # base-java
-remove "base-java:20150918"
+remove "base-java:20160207"
 
 # dind
 remove "dind:1.9.1"

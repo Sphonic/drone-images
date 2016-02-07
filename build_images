@@ -10,10 +10,10 @@ deprecated "base:precise" "builder/base/" "Dockerfile-precise"
 deprecated "base:trusty" "builder/base/" "Dockerfile-trusty"
 
 # base-core
-build "base-core:20150918" "builder/base-core/"
+build "base-core:20160207" "builder/base-core/"
 
 # base-java
-build "base-java:20150918" "builder/base-java/"
+build "base-java:20160207" "builder/base-java/"
 
 # dind
 build "dind:1.9.1" "builder/dind/dind_1.9.1/"

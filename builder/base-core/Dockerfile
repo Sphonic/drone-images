@@ -1,4 +1,4 @@
-FROM ubuntu:vivid
+FROM ubuntu:wily
 
 MAINTAINER Daniel Malon <operations@sphonic.com>
 

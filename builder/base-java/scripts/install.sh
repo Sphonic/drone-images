@@ -35,7 +35,7 @@ sudo apt-get install -yqq \
   maven
 
 # install gradle
-GRADLE_VERSION=${GRADLE_VERSION:="2.7"}
+GRADLE_VERSION=${GRADLE_VERSION:="2.10"}
 
 pushd /tmp
 

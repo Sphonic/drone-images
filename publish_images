@@ -10,10 +10,10 @@ deprecated "base:precise"
 deprecated "base:trusty"
 
 # base-core
-publish "base-core:20150918"
+publish "base-core:20160207"
 
 # base-java
-publish "base-java:20150918"
+publish "base-java:20160207"
 
 # dind
 publish "dind:1.9.1"
