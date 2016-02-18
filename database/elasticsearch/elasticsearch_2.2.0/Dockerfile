@@ -15,5 +15,6 @@ EXPOSE 9200 9300
 ENTRYPOINT ["/opt/elasticsearch-2.2.0/bin/elasticsearch"]
 CMD [ \
   "-Des.insecure.allow.root=true", \
-  "-Des.index.store.type=memory" \
+  "-Des.index.store.type=memory", \
+  "-Des.script.inline=true" \
 ]
