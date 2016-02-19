@@ -16,6 +16,5 @@ ENTRYPOINT ["/opt/elasticsearch-2.2.0/bin/elasticsearch"]
 CMD [ \
   "-Des.insecure.allow.root=true", \
   "-Des.network.host=0.0.0.0", \
-  "-Des.index.store.type=memory", \
   "-Des.script.inline=true" \
 ]
