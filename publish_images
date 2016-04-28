@@ -50,6 +50,7 @@ publish "golang:1.4.1"
 publish "golang:1.4.2"
 publish "golang:1.5.1"
 publish "golang:1.6"
+publish "golang:1.6.2"
 
 # python
 publish "python:2.7.9"

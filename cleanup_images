@@ -50,6 +50,7 @@ remove "golang:1.4.1"
 remove "golang:1.4.2"
 remove "golang:1.5.1"
 remove "golang:1.6"
+remove "golang:1.6.2"
 
 # python
 remove "python:2.7.9"

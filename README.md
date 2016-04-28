@@ -178,6 +178,8 @@ docker pull sphonic/golang:1.3.3
 docker pull sphonic/golang:1.4.1
 docker pull sphonic/golang:1.4.2
 docker pull sphonic/golang:1.5.1
+docker pull sphonic/golang:1.6
+docker pull sphonic/golang:1.6.2
 ```
 
 ```
