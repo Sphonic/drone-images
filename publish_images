@@ -32,6 +32,7 @@ publish "scala:2.10.5"
 publish "scala:2.11.5"
 publish "scala:2.11.6"
 publish "scala:2.11.7"
+publish "scala:2.11.8"
 
 # clojure
 publish "leiningen:2.5.1"

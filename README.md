@@ -155,6 +155,7 @@ docker pull sphonic/scala:2.10.5
 docker pull sphonic/scala:2.11.5
 docker pull sphonic/scala:2.11.6
 docker pull sphonic/scala:2.11.7
+docker pull sphonic/scala:2.11.8
 ```
 
 ```
