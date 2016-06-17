@@ -138,6 +138,7 @@ Included software:
 ```
 # ansible
 docker pull sphonic/ansible:1.9.2
+docker pull sphonicsnapshots/ansible:2.1.0.0
 ```
 
 ```

@@ -20,6 +20,7 @@ remove "dind:1.9.1"
 
 # ansible
 remove "ansible:1.9.2"
+remove "ansible:2.1.0.0"
 
 # gcc
 remove "gcc:4.6"

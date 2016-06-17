@@ -1,0 +1,6 @@
+{
+  "arc.land.onto.default": "master",
+  "phabricator.uri": "https://phabricator.sphoniclabs.net/",
+  "base": "git:merge-base(master)",
+  "repository.callsign": "DRONEIMAGES"
+}
