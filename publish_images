@@ -20,6 +20,7 @@ publish "dind:1.9.1"
 
 # ansible
 publish "ansible:1.9.2"
+publish "ansible:2.1.0.0"
 
 # gcc
 publish "gcc:4.6"
